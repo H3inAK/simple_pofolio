@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Portfolio Design</title>
+  </head>
+  <body class="bg-[#f5f5f5]">
+    <!-- Header -->
+    <header class="sticky top-0 z-9 bg-[#f5f5f5]">
+      <nav class="main-container">
+        <div class="flex justify-between items-center py-7">
+          <img
+            class="w-[40px] h-auto cursor-pointer"
+            src="./assets/images/logo.png"
+            alt="TZo"
+          />
+
+          <!-- Laptop -->
+          <ul class="flex gap-7 text-neutral-600 font-medium max-md:hidden">
+            <li
+              class="hover:text-primary hover:font-bold duration-500 cursor-pointer"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="text-primary font-bold border-b-2 border-primary cursor-default"
+            >
+              <a href="./works.html">Works</a>
+            </li>
+            <li
+              class="hover:text-primary hover:font-bold duration-500 cursor-pointer"
+            >
+              <a href="./about.html">About</a>
+            </li>
+            <li
+              class="hover:text-primary hover:font-bold duration-500 cursor-pointer"
+            >
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile -->
+          <input type="checkbox" name="" id="menu-toggle" class="hidden peer" />
+          <label
+            for="menu-toggle"
+            class="border z-10 border-neutral-200 rounded-full size-10 hidden max-md:flex justify-center items-center cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-2-icon lucide-menu-2"
+            >
+              <path d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </label>
+
+          <!-- Mobile Sidebar -->
+          <div
+            class="w-64 fixed bg-white inset-y-0 left-0 z-10 shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out max-md:block hidden"
+          >
+          <ul class="p-4 space-y-4 flex flex-col">
+            <li class="py-10">
+              <a href="index.html"
+                ><img src="./assets/images/logo.png" alt="logo"
+              /></a>
+            </li>
+            <li>
+              <a class="p-2 block hover:bg-gray-200" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="p-2 block bg-gray-200" href="works.html"
+                >Works</a
+              >
+            </li>
+            <li>
+              <a class="p-2 block hover:bg-gray-200" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="p-2 block hover:bg-gray-200" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <!-- Main Content -->
+      <main class="mt-20">
+        <!-- Works Section -->
+        <section>
+          <div class="flex items-center gap-3 mb-10">
+            <div class="w-[20px] h-[3px] bg-neutral-500"></div>
+            <p class="font-medium text-2xl text-neutral-700 max-md:text-base">
+              All Works
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 gap-y-6 md:gap-10 lg:gap-10 md:grid-cols-3 lg:grid-cols-3 pb-20 border-b border-b-neutral-200"
+          >
+            <div class="hover:scale-105 hover:cursor-pointer duration-300">
+              <img
+                class="mb-3.5"
+                src="./assets/images/01.png"
+                alt="FreshCart UI"
+              />
+              <p class="text-neutral-900">FreshCart UI</p>
+              <p class="text-neutral-500">FreshCart (Grocery Delivery)</p>
+            </div>
+            <div class="hover:scale-105 hover:cursor-pointer duration-300">
+              <img
+                class="mb-3.5"
+                src="./assets/images/02.png"
+                alt="BloomBank App"
+              />
+              <p class="text-neutral-900">BloomBank App</p>
+              <p class="text-neutral-500">BloomBank (Digital Banking)</p>
+            </div>
+            <div class="hover:scale-105 hover:cursor-pointer duration-300">
+              <img
+                class="mb-3.5"
+                src="./assets/images/03.png"
+                alt="NutriTrack Dashboard"
+              />
+              <p class="text-neutral-900">NutriTrack Dashboard</p>
+              <p class="text-neutral-500">
+                NutriTrack (Health & Nutrition Analytics)
+              </p>
+            </div>
+            <div class="hover:scale-105 hover:cursor-pointer duration-300">
+              <img
+                class="mb-3.5"
+                src="./assets/images/04.png"
+                alt="FreshCart UI"
+              />
+              <p class="text-neutral-900">VoltCharge eCommerce</p>
+              <p class="text-neutral-500">VoltCharge (Tech Gadgets Store)</p>
+            </div>
+            <div class="hover:scale-105 hover:cursor-pointer duration-300">
+              <img
+                class="mb-3.5"
+                src="./assets/images/05.png"
+                alt="BloomBank App"
+              />
+              <p class="text-neutral-900">LuxeTime Watch Configurator</p>
+              <p class="text-neutral-500">LuxeTime (Luxury Watches)</p>
+            </div>
+            <div class="hover:scale-105 hover:cursor-pointer duration-300">
+              <img
+                class="mb-3.5"
+                src="./assets/images/06.png"
+                alt="NutriTrack Dashboard"
+              />
+              <p class="text-neutral-900">AutoLens Car Marketplace</p>
+              <p class="text-neutral-500">AutoLens (Automobile eCommerce)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mt-20">
+          <!-- Contact Me-->
+          <div
+            class="flex flex-col gap-4 md:flex-row md:justify-between md:items-start lg::flex-row lg::justify-between lg::items-start"
+          >
+            <div class="flex gap-3 items-center">
+              <div class="w-[20px] h-[3px] bg-neutral-500"></div>
+              <p class="font-medium text-2xl max-md:text-base text-neutral-700">
+                Contact Me
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-3.5 w-[644px] max-md:w-full">
+              <p class="text-2xl max-md:text-base text-neutral-700">
+                Send a message
+              </p>
+
+              <input type="text" class="input" placeholder="Name" />
+              <input type="email" class="input" placeholder="Email" />
+              <textarea
+                class="input"
+                placeholder="Message"
+                name="message"
+                id="message"
+                rows="5"
+              ></textarea>
+
+              <a href="#">
+                <button
+                  class="primary-btn min-w-28 rounded-md cursor-pointer flex items-center justify-center gap-2 w-full"
+                >
+                  Send<svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.20308 1.04312C1.00481 0.954998 0.772341 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568117 1.75196L3.92115 7.50002L0.568117 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.772341 13.9952 1.00481 14.045 1.20308 13.9569L14.7031 7.95693C14.8836 7.87668 15 7.69762 15 7.50002C15 7.30243 14.8836 7.12337 14.7031 7.04312L1.20308 1.04312ZM4.84553 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22092 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22092 7.10002 9 7.10002H4.84553Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="mt-20 bg-white px-20 py-5 md:py-10 lg:py-10 font-[14px]">
+        <div
+          class="flex flex-col gap-5 lg:flex-row md:flex-row justify-between mb-5"
+        >
+          <!-- Contact -->
+          <div class="flex flex-col items-center md:items-start lg:items-start">
+            <img
+              src="./assets/images/logo.png"
+              alt="logo"
+              class="w-[40px] h-auto mb-10 cursor-pointer"
+            />
+            <p class="mb-4 text-neutral-500">Contact</p>
+            <p
+              class="mb-4 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+            >
+              t.me/csthantzinoo
+            </p>
+            <p
+              class="mb-4 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+            >
+              +959776350995
+            </p>
+          </div>
+
+          <!-- Pages & Social -->
+          <div
+            class="flex flex-col gap-5 lg:flex-row md:flex-row lg:gap-10 md:gap-10"
+          >
+            <!-- Pages -->
+            <div
+              class="flex flex-col items-center md:items-start lg:items-start"
+            >
+              <p class="mb-4 text-neutral-500">Pages</p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                Home
+              </p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                Works
+              </p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                About
+              </p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                Contact
+              </p>
+            </div>
+            <!-- Social -->
+            <div
+              class="flex flex-col items-center md:items-start lg:items-start"
+            >
+              <p class="mb-4 text-neutral-500">Social</p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                Instagram
+              </p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                Dribble
+              </p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                Behance
+              </p>
+              <p
+                class="mb-3 text-sm cursor-pointer hover:scale-105 transition hover:text-primary"
+              >
+                LinkedIn
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-neutral-500 text-sm">
+          &copy; 2025 Thant Zin Oo. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
