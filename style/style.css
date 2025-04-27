@@ -16,11 +16,11 @@
 }
 
 .primary-btn {
-  @apply text-[#FAFAFA] bg-primary py-3.5 px-6 font-semibold hover:bg-amber-700
+  @apply text-[#FAFAFA] bg-primary py-3.5 px-6 font-semibold hover:bg-amber-700 max-sm:text-sm max-sm:py-[10px] max-sm:px-[18px]
 }
 
 .secondary-btn {
-    @apply border border-primary text-primary py-3.5 px-6 font-semibold hover:bg-primary hover:text-white duration-500
+    @apply border border-primary text-primary max-sm:text-sm max-sm:py-[10px] max-sm:px-[18px] py-3.5 px-6 font-semibold hover:bg-primary hover:text-white duration-500
 }
 
 .input{
